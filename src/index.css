@@ -1,0 +1,935 @@
+/* Add this to your existing CSS file or in a <style> tag */
+
+.navbar {
+  align-items: center;
+
+  color: white;
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-toggle .bar {
+  width: 30px;
+  height: 3px;
+  margin: 3px 0;
+  background-color: white;
+}
+
+.nav-list {
+  list-style-type: none;
+  display: flex;
+}
+
+
+.nav-link:hover {
+  color: #ff9900;
+}
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: flex;
+  }
+
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    z-index: 1; /* Ensure the menu is above the main content */
+  }
+
+  .nav-list.open {
+    display: flex;
+  }
+
+  .nav-list li {
+    margin: 0;
+    padding: 15px;
+    text-align: center;
+  }
+}
+
+.nav-list.open {
+  display: flex;
+}
+
+.nav-list li {
+  margin: 0;
+
+  text-align: center;
+  border-bottom: 1px solid #555; /* Add a border between menu items */
+}
+
+/* Add some spacing for the main content */
+.main-content {
+  padding-top: 100px; /* Adjust as needed */
+}
+
+
+
+/* New skills */
+
+/* ... (previous CSS rules) */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+
+
+.skills-container {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.skills-heading {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ... rest of your styles ... */
+
+
+.skills-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.skillsHeader {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+
+
+.skillsIcons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* Allow icons to wrap to the next line */
+ width: calc(80% - 10px);
+  gap: 50px; /* Gap between icons */
+}
+
+
+.skill--box {
+  cursor: pointer;
+  flex-direction: column;
+  margin: 10px;
+  padding: 10px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  transition: transform 0.2s ease-in-out;
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+
+
+
+.skill--box img {
+  width: 80px; /* Adjust the size of the icons */
+  height: 80px;
+  border-radius: 0%; /* Make the icons circular */
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+
+
+body {
+  margin: 0;
+}
+
+.skillsContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 20px;
+  justify-content: space-between;
+
+}
+
+
+
+
+
+
+.skill--box h3 {
+  margin-top: 10px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  opacity: 0; /* Hide the technology name by default */
+  transition: opacity 0.2s ease-in-out;
+}
+
+/* Show technology name on hover */
+.skill--box:hover h3 {
+  opacity: 1;
+}
+
+/* Add spacing between rows */
+.skillsContainer > div {
+  margin-bottom: 40px;
+}
+
+
+
+/* ... (previous CSS rules) */
+
+/* Add hover effect */
+.skill--box:hover {
+  border-color: #4caf50; /* Change the border color on hover */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Add a slightly stronger box-shadow on hover */
+  transform: translateY(-5px); /* Add a slight lift effect on hover */
+}
+
+
+
+
+
+
+.skill--box:hover::before {
+  content: attr(data-text); /* Get the data-text attribute value and display it */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  font-size: 14px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  pointer-events: none; /* Prevent the text overlay from blocking clicks */
+}
+
+/* End Skils */
+
+.container1 {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 50px 20px;
+}
+
+
+.services-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.services-list > div {
+  flex: 1 1 300px;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s;
+}
+
+.services-list > div:hover {
+  transform: translateY(-5px);
+}
+
+.services-list i {
+  font-size: 40px;
+  color: #6c63ff;
+  margin-bottom: 20px;
+}
+
+.services-list h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.services-list p {
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.services-list a {
+  color: #6c63ff;
+  font-size: 16px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.services-list a:hover {
+  color: #5050b4;
+}
+
+.homie{
+  margin-top: 50px;
+}
+/* Add your custom styles for buttons here */
+.btn {
+  display: inline-block;
+  transition: all 0.3s ease;
+
+  padding: 12px 24px;
+  border: 2px solid  #6c63ff;
+  color: #6c63ff;
+  background-color: transparent;
+  font-size: 16px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+  margin-right: 10px;
+  margin-top: 50px;
+}
+
+.btn:hover {
+  background-color: #6c63ff;
+  color: #ffffff;
+}
+.add-more-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; /* Adjust this value as needed */
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: #EAEDF0;
+  color: #080808;
+}
+
+#header {
+
+background-color: #0F0C41;
+  background-size: cover;
+  background-position: center;
+  /* Add this new CSS class */
+.move-up {
+  margin-top: -50px; /* Adjust the value as needed */
+}
+
+}
+
+.container {
+  padding: 10px 10%;
+}
+
+nav {
+  flex-wrap: wrap;
+}
+
+.logo {
+  width: 140px;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+
+
+nav ul li a::after {
+  content: '';
+  width: 0;
+  height: 3px;
+
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+.header-text {
+  
+  font-size: 30px;
+}
+
+/* .header-text h2 {
+  font-size: 60px;
+  margin-top: 20px;
+} */
+
+.header-text h2  .chava {
+  color: whitesmoke;
+  font-size: 100px
+}
+
+.span{
+  color: yellow;
+}
+
+
+
+
+
+
+
+/* og code */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Reset default margins and paddings for the navbar */
+.navbar {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  background-color: #222; /* Dark background color */
+  justify-content: center;
+}
+
+/* Style each individual navbar link */
+.nav-link {
+  position: relative;
+  padding: 15px 25px;
+  text-decoration: none;
+  color: #fff; /* White text color */
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase; /* Uppercase text */
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.nav-link::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px; /* Underline height */
+  background-color: #fff; /* Underline color */
+  transform: scaleX(0); /* Initially hidden */
+  transition: transform 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #FFD700; /* Change text color on hover */
+  background-color: #444; /* Darken background color on hover */
+}
+
+.nav-link:hover::before {
+  transform: scaleX(1); /* Show underline on hover */
+}
+
+/* Add a subtle drop shadow effect to the navbar */
+.navbar {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Add a smooth scroll effect to the navbar links */
+.nav-link {
+  cursor: pointer;
+}
+
+/* Add spacing between navbar links (optional, adjust as needed) */
+.nav-link:not(:first-child) {
+  margin-left: 20px;
+}
+
+
+/* Style the hero section background with a stunning gradient and pattern */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #403B4A, #E7DFDD);
+  overflow: hidden;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+ 
+  opacity: 0.5;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.hero h1 {
+  font-size: 64px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.hero p {
+  font-size: 24px;
+  max-width: 800px;
+  margin: 0 auto 40px;
+}
+
+
+
+.lololol{
+  color: #57abf5;
+  text-decoration: underline;
+}
+/*  Styling the app.js   */
+
+.fixed-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #222; /* Dark background color */
+  z-index: 1000;
+}
+
+.fixed-navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  height: 60px; /* Adjust the height as needed */
+}
+
+.fixed-navbar li {
+  margin: 0 20px;
+}
+
+.fixed-navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.fixed-navbar a.active {
+  /* Add styles for the active link if needed */
+  font-weight: bold;
+}
+
+/* Styling for individual sections */
+/* You can create additional CSS rules for other sections (About, Education, Skills, Projects, etc.) */
+#home {
+  min-height: 100vh; /* Adjust the height as needed */
+  background-color: #f2f2f2; /* Background color for the Home section */
+}
+
+
+
+.tech-stack {
+  font-size: 75px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.tech {
+  font-size: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+   /* Adjust this value to increase the height of the tech class elements */
+}
+
+.tech h2 {
+  font-size: 20px; /* Adjust this value to increase the font size of the heading */
+  margin-bottom: 20px;
+}
+
+.tech .icons {
+  font-size: 80px; /* Adjust this value to increase the size of the icons */
+  margin-bottom: 20px;
+}
+
+.tech p {
+  font-size: 19px; /* Adjust this value to increase the font size of the paragraph */
+}
+
+
+/* Skills.css */
+
+
+
+.container {
+  align-items: center;
+  height: 100vh;
+}
+
+
+.sub-title {
+  font-weight: bold;
+}
+
+
+
+.tech {
+  flex: 0 0 calc(25% - 20px);
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+}
+
+.tech h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.tech p {
+  text-align: center;
+}
+/* test */
+
+/* Add this to your existing CSS file or in a <style> tag */
+
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.project-details {
+  padding: 20px;
+}
+
+
+
+.technology span {
+  margin-left: 5px;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+}
+
+a:hover {
+  color: #ff9900;
+}
+
+.add-more-container {
+  margin-top: 40px;
+}
+
+.github.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+/* end test */
+/* Project */
+
+
+@media (max-width: 768px) {
+  .project {
+    width: 100%;
+    margin: 0 0 40px;
+  }
+}
+
+.projects {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.sub-title {
+
+  margin-bottom: 20px;
+}
+
+.project {
+  width: 340px;
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color: #f5f5f5;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+}
+
+.project img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.project-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.technologies {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.technology {
+  display: flex;
+  align-items: center;
+  margin: 0 5px;
+  color: #007bff;
+}
+
+.technology svg {
+  margin-right: 5px;
+}
+
+.project p {
+  margin-bottom: 10px;
+}
+
+.project a {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.project a svg {
+  margin-right: 8px;
+}
+
+.project a:hover {
+  background-color: #0056b3;
+}
+
+/* Contact.css */
+/* Contact.css */
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f7f7f7;
+}
+
+.contact-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.contact-form {
+  max-width: 400px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.contact-input,
+.contact-textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.contact-textarea {
+  resize: vertical;
+}
+
+.contact-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+  background-color: #0056b3;
+}
+
+.header-text h1 {
+  margin: 0;
+}
+
+/* Assuming you have Font Awesome CSS properly linked in your index.html or somewhere in your project */
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.social-icons a {
+
+  font-size: 1.5em;
+  display: inline-block;
+  padding: 10px;
+  border: 2px solid white; /* Blue border color */
+  margin-top: 50px;
+  color: white; /* Blue icon color */
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  background-color: #007bff; /* Blue background color on hover */
+  color: #fff; /* White icon color on hover */
+}
+
+/*about */
+
+/* Add this to your existing CSS file or in a <style> tag */
+
+.container {
+  text-align: center;
+}
+
+
+
+.row {
+
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.about-col-1 {
+
+  margin-bottom: 20px;
+}
+
+
+
+.about-para {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+  .sub-title {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+
+  .about-col-1 {
+    flex: 1 1 100%;
+  }
+
+  .about-col-2 {
+    flex: 1 1 100%;
+    margin-left: 0;
+  }
+
+  .about-para {
+    font-size: 14px;
+  }
+}
