@@ -3,7 +3,7 @@ import myPhoto from './pic.jpg'; // Import your photo here
 
 const AboutMe = () => {
   return (
-    <div>
+    <div style={{    marginBlock : '80px'}}>
 
 
 
