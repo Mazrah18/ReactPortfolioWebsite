@@ -7,11 +7,10 @@ const AboutMe = () => {
 
 
 
-
-    <div className="container" style={{ display: 'flex', justifyContent: 'center' }}>
     <h1 className="sub-title about-h1" style={{ fontSize : '100px', textAlign: 'center' }}>
     My Story
   </h1>
+    <div className="container" style={{ display: 'flex', justifyContent: 'center' }}>
       
       <div className="about" style={{ maxWidth: '1000px', width: '100%', padding: '0 20px' }}>
        
