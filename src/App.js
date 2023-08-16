@@ -9,7 +9,7 @@ import Projects from './Projects';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import 'devicon/devicon.min.css';
 import AboutMe from './About';
-
+import nopage from './404';
 function App() {
   // Function to scroll to the top when clicking on the logo or "Home" link in the navbar
 
@@ -23,6 +23,7 @@ function App() {
             <Route path="/about" component={AboutMe} />
             <Route path="/skills" component={Skills} />
             <Route path="/projects" component={Projects} />
+            <Route path = '*' component ={nopage} />
    
           </Switch>
         </div>
