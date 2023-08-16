@@ -35,8 +35,7 @@ const AboutMe = () => {
           {/* Right Half - About Me */}
           <div className="about-col-2" style={{ flex: '1 1 400px', marginLeft: '40px' }}>
             <p className="about-para">
-              
-I am a dedicated graduate student specializing in web development with a robust command of the MERN stack. My journey is marked by a keen enthusiasm for crafting seamless digital experiences and dynamic applications. Beyond my proficiency in web development, I am driven by a strong fascination for the world of data analysis and machine learning. I have a profound curiosity for harnessing the power of data to uncover insights and create impactful solutions. My journey is a fusion of technical expertise, creative problem-solving, and an unwavering commitment to expanding my horizons in both web development and the realm of data-driven innovation.
+              I am a graduate student @ UCR specializing in web development with a robust command of the MERN stack (MongoDB, Express,ReactJs and NodeJs ). My journey is marked by a keen enthusiasm for crafting seamless digital experiences and dynamic applications. Beyond my proficiency in web development, I am driven by a strong fascination for the world of data analysis and machine learning. I have a profound curiosity for harnessing the power of data to uncover insights and create impactful solutions. My journey is a fusion of technical expertise, creative problem-solving, and an unwavering commitment to expanding my horizons in both web development and the realm of data-driven innovation.
             </p>
 
             
