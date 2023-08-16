@@ -14,8 +14,8 @@ const AboutMe = () => {
       
       <div className="about" style={{ maxWidth: '1000px', width: '100%', padding: '0 20px' }}>
        
-        <div className="row" style={{ display: 'flex', flexWrap: 'wrap' }}>
-          {/* Left Half - Your Photo */}
+        <div className="row">
+    
           <div className="about-col-1" style={{ flex: '1 1 300px', display: 'flex', justifyContent: 'center' }}>
           <div
           className="circular-image-container"
