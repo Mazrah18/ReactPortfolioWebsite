@@ -35,16 +35,8 @@ const AboutMe = () => {
           {/* Right Half - About Me */}
           <div className="about-col-2" style={{ flex: '1 1 400px', marginLeft: '40px' }}>
             <p className="about-para">
-              As a Software Developer with a focus on Web Frontend and Android application development, I've honed a diverse
-              set of skills and amassed a broad base of knowledge in the tech sphere. I earned my Master's degree in Computer
-              Engineering from the prestigious University of California, Riverside, a feat I'm immensely proud of. I am
-              well-versed in a variety of programming languages and technologies, including but not limited to JavaScript,
-              Java, Kotlin, and TypeScript. I particularly excel in working with the MERN Stack and Bootstrap for web
-              development. Beyond my development capabilities, I have a keen interest in Natural Language Processing, which
-              has propelled me towards groundbreaking research projects and publications in this field. Complementing my
-              technical abilities, I have substantial experience as a mentor and organizer for coding bootcamps and
-              hackathons, and I cherish the opportunity to tutor undergraduates in Python, JavaScript, and Object-Oriented
-              programming fundamentals.
+              
+I am a dedicated graduate student specializing in web development with a robust command of the MERN stack. My journey is marked by a keen enthusiasm for crafting seamless digital experiences and dynamic applications. Beyond my proficiency in web development, I am driven by a strong fascination for the world of data analysis and machine learning. I have a profound curiosity for harnessing the power of data to uncover insights and create impactful solutions. My journey is a fusion of technical expertise, creative problem-solving, and an unwavering commitment to expanding my horizons in both web development and the realm of data-driven innovation.
             </p>
 
             
