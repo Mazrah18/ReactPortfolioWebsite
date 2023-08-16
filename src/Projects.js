@@ -15,7 +15,7 @@ const Projects = () => {
     {
       title: 'Portfolio Website',
       description: 'Utilized ReactJs with NodeJs to create a custom portfolio website from scratch.',
-      image: './portfolio.png',
+      image: './image.jpg',
       githubLink: 'https://github.com/Mazrah18/ReactPortfolioWebsite',
       technologies: ['React', 'Node.js', 'HTML', 'CSS'],
     },
