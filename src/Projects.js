@@ -6,17 +6,17 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 const Projects = () => {
   const projectsData = [
     {
-      title: 'Blog Website',
+      title: 'Multi Genre Blog Website',
       description: 'Designed and Developed a fully functional blogging portal using the MERN stack.',
       image: './image.jpg',
-      githubLink: 'https://github.com/your-username/social-media-app',
+      githubLink: 'https://github.com/Mazrah18/BlogNest',
       technologies: ['React','Express' ,'Node.js', 'MongoDb'],
     },
     {
       title: 'Portfolio Website',
       description: 'Utilized ReactJs with NodeJs to create a custom portfolio website from scratch.',
       image: './image.jpg',
-      githubLink: 'https://github.com/your-username/social-media-app',
+      githubLink: 'https://github.com/Mazrah18/ReactPortfolioWebsite',
       technologies: ['React', 'Node.js', 'HTML', 'CSS'],
     },
     {
@@ -30,14 +30,14 @@ const Projects = () => {
       title: 'TechSift: Tech Reviews Search Engine',
       description: 'A web application that provides with reviews of various technology.',
       image: './image.jpg',
-      githubLink: 'https://github.com/your-username/social-media-app',
-      technologies: ['Python', 'Flask', 'HTML', 'CSS', 'JavaScript'],
+      githubLink: 'https://github.com/Mazrah18/TechreviewSearchEngine',
+      technologies: ['Python', 'Flask', 'HTML', 'CSS', 'JavaScript', 'BERT' , 'Lucene'],
     },
     {
       title: 'Image Colorization using Inception V3 deep learning model',
       description: 'Deep learning Model to provide colorful and vibrant images from B/W images as an input.',
       image: './image.jpg',
-      githubLink: 'https://github.com/your-username/social-media-app',
+      githubLink: 'https://github.com/Mazrah18/ImageColorizationusingInceptionV3',
       technologies: ['Deep learning', 'python', 'ML', 'Data Visualization'],
     }
    ,
@@ -46,7 +46,7 @@ const Projects = () => {
       title: 'Transformer Based Network Traffic Classification ',
       description: 'Bert based Network classification on real world data obtained using wireshark',
       image: './image.jpg',
-      githubLink: 'https://github.com/your-username/social-media-app',
+      githubLink: 'https://github.com/Mazrah18/Network-Traffic-Classification-using-BERTtransformer',
       technologies: ['python', 'BERT', 'pytorch', 'matplotlib'],
     }
 
