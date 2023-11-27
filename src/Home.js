@@ -31,7 +31,7 @@ const Home = () => {
          </a>
       </div>
       <div style={{ marginBottom: '20px' }}>
-      <a href="https://drive.google.com/file/d/1485kkC6iMA3GYbpWde2x500sM2uR5WSa/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="btn homie">
+      <a href="https://drive.google.com/file/d/1o-WnGNr5EB3AUk3NaxoLPskc5kEEAUvW/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="btn homie">
            View Resume
          </a>
       </div>
