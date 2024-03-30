@@ -42,7 +42,7 @@ const Navbar = () => {
         </li>
         <li>
           <a
-            href="https://drive.google.com/file/d/1WC6rtPl6YPW914zQlx76D286dlVl6yGR/view?usp=drive_link"
+            href="https://drive.google.com/file/d/1mE7f795MidAh37Sa8bEFpwaY3u3mEr9e/view?usp=sharing"
             className="nav-link"
             target="_blank"
             rel="noopener noreferrer"
