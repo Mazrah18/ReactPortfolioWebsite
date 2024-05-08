@@ -5,7 +5,7 @@ import TypingAnimation from './TypingAnimation';
 
 const Home = () => {
 
-  const emailAddress = 'parthbhatt1810@gmail.com';
+  const emailAddress = 'parthbhatt453@gmail.com';
 
   return (
     <div id="header" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '100vh' }}>
