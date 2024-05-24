@@ -16,7 +16,7 @@ const Projects = () => {
       image: workoutImage,
       githubLink: 'https://github.com/Mazrah18/BlogNest',
       technologies: ['React','Express' ,'Node.js', 'MongoDb','JWT authentication'],
-      DirectLink: 'https://parth-workout-app.netlify.app/',
+      DirectLink: 'https://parth-workout.netlify.app/',
       isLive: true
     },
     {
